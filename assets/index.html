@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Tabela IMC</h1>
+        <div class="tabelaIMC">
+            <div>
+                <h3>IMC</h3>
+                <ul class="listaIMC" style="padding: 0px;
+                padding-inline-start: 0px; margin: 0px;">
+                    <li id="item1">Menos do que 18,5</li>
+                    <li id="item2">Entre 18,5 e 24,9</li>
+                    <li id="item3">Entre 25 e 29,9</li>
+                    <li id="item4">Entre 30 e 34,9</li>
+                    <li id="item5">Entre 35 e 39,9</li>
+                    <li id="item6">Mais do que 40</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Resultado</h3>
+                <ul class="listaIMC" style="padding: 0px;
+                padding-inline-start: 0px; margin: 0px;">
+                    <li id="item1">Abaixo do Peso</li>
+                    <li id="item2">Peso Normal</li>
+                    <li id="item3">Sobrepeso</li>
+                    <li id="item4">Obesidade Grau 1</li>
+                    <li id="item5">Obesidade Grau 2</li>
+                    <li id="item6">Obesidade Grau 3</li>                   
+                </ul>
+            </div>
+        </div>
+
+        <h1>Calcule seu IMC</h1>
+        <form class="form" action="" method="GET">
+            <label for="peso">Peso</label>
+            <input type="text" class="peso" placeholder="Em Kg">
+
+            <label for="altura">Altura</label>
+            <input type="text" class="altura" placeholder="Em Metros">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="resultado"></div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
